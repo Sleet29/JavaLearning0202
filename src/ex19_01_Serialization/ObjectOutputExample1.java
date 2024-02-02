@@ -27,8 +27,8 @@ class ObjectOutputExample1 {
 	// 파라미터로 넘겨진 객체가 파일에 저장됩니다.
 	// GregorianCalendar 객체를 생성해서 파일에 씁니다.
 			out.writeObject(new GregorianCalendar(2023,0,14));
-			out.writeObject(new GregorianCalendar(2023,0,14));
-			out.writeObject(new GregorianCalendar(2023,0,14));
+			out.writeObject(new GregorianCalendar(2023,0,15));
+			out.writeObject(new GregorianCalendar(2023,0,16));
 		} catch (IOException ioe) {
 			System.out.println("파일을 출력할 수 없습니다.");
 		}

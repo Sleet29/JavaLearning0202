@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 class ObjectInputExample1 {
@@ -15,8 +14,8 @@ class ObjectInputExample1 {
 	/*
 	 * 1. 파일을 엽니다.
 	 * ObjectOutputStream 클래스는 객체를 스트림으로 만들어서 출력하는 기능이 있는 클래스입니다.
-	 * 이 클래스에는 데이터를 파일에 저장하는 기능이 없기 때문에 FileOutput
-	 * FileOutputStream 객체를 생성해서 ObjectOutputStream 클래스의 생성자 파라미터로 넘겨주어야 함
+	 * 이 클래스에는 FileInputStream 클래스와 함께 사용하면 저장된 객체를 프로그램에서 다시 읽어서 사용가능
+	 * FileInputStream 객체를 생성해서 ObjectInputStream 생성자 파라미터로 넘겨주어야 함
 	 */
 		ObjectInputStream in = null;
 		try {
